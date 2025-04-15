@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 
-export default function CardComponent({ cat }) {
+export default function CardComponent({cat}) {
     return (
         <Card className="h-100 w-100">
             <div className="ratio ratio-1x1 overflow-hidden">
