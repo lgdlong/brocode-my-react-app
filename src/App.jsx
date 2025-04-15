@@ -1,19 +1,15 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import Food from './Food'
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
+import Food from './components/food/Food'
+import CardList from './components/card-list/CardList'
 
 export default function App() {
   return (
     <>
       <Header />
-      <main>
-        <h1>Hello World</h1>
-        <p>Welcome to my React app!</p>
-
-        <Food />
-        <p>Here is a list of my favorite foods:</p>
-      </main>
+      <Food />
+      <CardList />
       <Footer />
     </>
   )
