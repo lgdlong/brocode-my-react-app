@@ -6,14 +6,14 @@ import Button from '../button/Button';
 
 export default function CardList() {
   const allCats = [
-    { id: 1, name: 'Black', imgPath: 'public/img/black.jpg', description: 'He is just black.' },
-    { id: 2, name: 'Fly', imgPath: 'public/img/fly.jpg', description: 'Supercat can fly.' },
-    { id: 3, name: 'Larry', imgPath: 'public/img/larry.jpg', description: 'Larry will find you at night.' },
-    { id: 4, name: 'Shower', imgPath: 'public/img/shower.jpg', description: 'Sad cat take shower.' },
-    { id: 5, name: 'Hitler', imgPath: 'public/img/hitler-cat.jpg', description: 'Hitler cat irl, pls do not adopt him.' },
-    { id: 6, name: 'Habibi', imgPath: 'public/img/habibi-cat.jpg', description: 'Ling ga ling ga ling.' },
-    { id: 7, name: 'Long Face', imgPath: 'public/img/long-face.jpg', description: 'If u has long face, hoomen will come.' },
-    { id: 8, name: 'Sigma', imgPath: 'public/img/sigma-cat.jpg', description: 'Sigma sigma cat, sigma cat, sigma cat.' },
+    { id: 1, name: 'Black', imgPath: '/img/black.jpg', description: 'He is just black.' },
+    { id: 2, name: 'Fly', imgPath: '/img/fly.jpg', description: 'Supercat can fly.' },
+    { id: 3, name: 'Larry', imgPath: '/img/larry.jpg', description: 'Larry will find you at night.' },
+    { id: 4, name: 'Shower', imgPath: '/img/shower.jpg', description: 'Sad cat take shower.' },
+    { id: 5, name: 'Hitler', imgPath: '/img/hitler-cat.jpg', description: 'Hitler cat irl, pls do not adopt him.' },
+    { id: 6, name: 'Habibi', imgPath: '/img/habibi-cat.jpg', description: 'Ling ga ling ga ling.' },
+    { id: 7, name: 'Long Face', imgPath: '/img/long-face.jpg', description: 'If u has long face, hoomen will come.' },
+    { id: 8, name: 'Sigma', imgPath: '/img/sigma-cat.jpg', description: 'Sigma sigma cat, sigma cat, sigma cat.' },
   ];
 
   const [cats, setCats] = useState(allCats); // ✅ manage state
