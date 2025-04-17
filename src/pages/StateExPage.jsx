@@ -5,6 +5,10 @@ import Header from '../components/header/Header'
 export default function StateExPage() {
     const [count, setCount] = React.useState(0);
 
+    const [name, setName] = React.useState("");
+
+    const [paymentMethod, setPaymentMethod] = React.useState("");
+
     return (
         <>
             <Header />
@@ -20,6 +24,25 @@ export default function StateExPage() {
                     <button className='btn btn-secondary' onClick={() => setCount(0)}>Reset</button>
                     <button className='btn btn-primary' onClick={() => setCount(count + 1)}>Increment</button>
                 </div>
+            </div>
+
+            <div >
+                <h2>Name: {name}</h2>
+                <input type="text" className='form-control' id='input-name' onChange={(e) => setName(e.target.value)} placeholder='Enter your name' />
+                <div className='d-flex gap-3'>
+                    <button className='btn btn-primary mt-3' onClick={() => {
+                        setName("");
+                        document.getElementById('input-name').value = "";
+                    }}>Clear</button>
+                </div>
+
+
+                <h2>Payment: {paymentMethod}</h2>
+                <select className='form-select' onChange={(e) => setPaymentMethod(e.target.value)}>
+                    <option value="Cash">Cash</option>
+                    <option value="PayPal">PayPal</option>
+                    <option value="Bank Transfer">Bank Transfer</option>
+                </select>
             </div>
         </>
     )
